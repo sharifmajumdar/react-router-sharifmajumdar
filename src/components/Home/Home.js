@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { CourseContext } from '../../App';
 
 const Home = () => {
-    const [courses, setCourses] = useContext(CourseContext);
+    const [courses] = useContext(CourseContext);
     return (
         <div className='row d-flex'>
             <div className='col-8'>
