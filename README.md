@@ -1,3 +1,6 @@
+This project about on learing finnish language. The project name is Suomi Oppia where you can get language related services.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

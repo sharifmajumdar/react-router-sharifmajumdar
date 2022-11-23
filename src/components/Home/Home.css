@@ -1,0 +1,31 @@
+.item-container{
+    border-right: 1px solid lightgray;
+}
+.article-text1{
+    text-align: justify;
+    padding: 10px;
+}
+.course{
+    display: flex;
+    border-bottom: 1px solid lightgray;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+}
+.course-name{
+    font-weight: 400;
+    color: black;
+    margin-left: 0px;
+}
+.add-button{
+    background-color: brown;
+    height: 35px;
+    width: 200px;
+    border: 1px solid lightcoral;
+    border-radius: 5px;
+    color: azure;
+    cursor: pointer;
+}
+.home-courses{
+    padding-top: 50px;
+}
