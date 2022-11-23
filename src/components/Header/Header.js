@@ -1,5 +1,5 @@
 import React from 'react';
-//import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
     return (
@@ -12,7 +12,7 @@ const Header = () => {
                     <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <div className="navbar-nav">
                             <a className="nav-item nav-link active" href='/'>Home</a>
-                            <a className="nav-item nav-link active" href='/services'>Services</a>
+                            <a className="nav-item nav-link active" href={`/services`}>Services</a>
                             <a className="nav-item nav-link active" href='/guidelines'>Guidelines</a>
                             <a className="nav-item nav-link active" href='/about'>About</a>
                         </div>
@@ -20,14 +20,6 @@ const Header = () => {
                 </nav>
             </div>
         </div>
-/*         <div className='header'>
-            <img src={header} alt="" />
-            <nav>
-                <a href="/player">Players</a>
-                <a href="/review">Selection Review</a>
-                <a href="/manage">Manage Players</a>
-            </nav>
-        </div> */
     );
 };
 

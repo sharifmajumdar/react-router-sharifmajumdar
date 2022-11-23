@@ -6,6 +6,7 @@ import Cart from '../Cart/Cart';
 import { useState, useEffect } from 'react';
 import data from '../../data/Data.json';
 import { addToDatabaseCart, getDatabaseCart } from '../../utilities/databaseManager';
+import { Link } from 'react-router-dom';
 
 const Services = (props) => {
         const [courses, setCourses] = useState([]);
@@ -57,10 +58,10 @@ const Services = (props) => {
             <div className='col-4'>
                 <div>
                     <Cart cart = {select}>
-                        <a href="/review">
+                        <Link to="/review">
                             <button className='btn btn-primary'>
                                             <FontAwesomeIcon icon={faHandPointer} /> Review Order</button>
-                        </a>
+                        </Link>
                     </Cart>
                 </div>
             </div>
