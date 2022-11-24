@@ -34,7 +34,6 @@ function App() {
             <Route path="/guidelines" element={<Guidelines />} />
             <Route path="/about" element={<About />} />
             <Route path="/review" element={<Review />} />
-            {/* <Route path="/course/:coureseId" element={<Course />} /> */}
             <Route exact path="/" element={<Home />} />
             <Route path="*" element={<NoMatch />} />
           </Routes>

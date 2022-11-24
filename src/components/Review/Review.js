@@ -38,7 +38,6 @@ const Review = () => {
     return (
         <div className='row'>
             <div className="col-8">
-                {/* <h1 style={{marginLeft: '250px'}} >Number of Items: {cart.length}</h1> */}
                 {
                     cart.map(cr => <ReviewItem 
                         key = {cr.key}

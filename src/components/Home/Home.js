@@ -37,10 +37,6 @@ const Home = () => {
                 <h2 className='home-courses'><u> Available courses</u></h2> <br />
                 {
                     courses && courses.slice(0, 4).map(course => 
-/*                             <Services
-                                addCourseHandler = {addCourseHandler}
-                                course = {course}>
-                            </Services> */
                             <div className="course" key={course.key}>
                                 <div className='course-name d-flex justify-content-start'>
                                     <h6>{course.title}</h6>
