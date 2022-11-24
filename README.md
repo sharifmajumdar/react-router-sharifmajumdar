@@ -1,5 +1,11 @@
-This project about on learing finnish language. The project name is Suomi Oppia where you can get language related services.
+#About project
+This project about on learing finnish language. The project name is Suomi Oppia where you can get language related services. 
 
+#Technical things
+The aim is to use the react router DOM as well as handling the local storage of the browser.
+
+#Netlify problem fix
+To redirect the all pages via index.html, one extra file named netlify.toml has been added
 
 # Getting Started with Create React App
 

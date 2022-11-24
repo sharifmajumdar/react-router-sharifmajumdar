@@ -16,6 +16,7 @@ import Footer from './components/Footer/Footer';
 import NoMatch from './components/NoMatch/NoMatch';
 import Review from './components/Review/Review';
 
+//Context API has been applied to shared data through routes
 export const CourseContext = createContext();
 
 function App() {

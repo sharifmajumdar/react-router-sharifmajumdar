@@ -12,18 +12,21 @@ const Review = () => {
     const [cart, setCart] = useState([]);
     const [orderPlaced, setOrderPlaced] = useState(false);
 
+    //This section handle the placing of order and free the cart 
     const handlePlaceOrder = () => {
         setCart([]);
         setOrderPlaced(true);
         processOrder();
     }
 
+    //Revome the unnecessay item and update the cart 
     const removeCourse = (courseKey) => {
         const newCart = cart.filter(cr => cr.key !== courseKey);
         setCart(newCart);
         removeFromDatabaseCart(courseKey);
     };
 
+    //Fetch item from local storage by using object keys and set it to the cart
     useEffect(()=>{
         const savedCart = getDatabaseCart();
         const courseKeys = Object.keys(savedCart);

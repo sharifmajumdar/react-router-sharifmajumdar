@@ -36,6 +36,7 @@ const Home = () => {
             <div className='home-courses col-4 item-container'>
                 <h2 className='home-courses'><u> Available courses</u></h2> <br />
                 {
+                    //Map fake data for first 4 items
                     courses && courses.slice(0, 4).map(course => 
                             <div className="course" key={course.key}>
                                 <div className='course-name d-flex justify-content-start'>

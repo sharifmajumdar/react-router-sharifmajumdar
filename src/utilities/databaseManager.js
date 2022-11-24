@@ -1,3 +1,4 @@
+//Getting session ID will help to acccess the local storage data
 const getUser = () => {
     const existingUser = sessionStorage.getItem('userId');
     if (existingUser) {

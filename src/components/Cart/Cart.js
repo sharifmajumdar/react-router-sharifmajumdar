@@ -13,7 +13,7 @@ const Cart = (props) => {
         numberOfCourses >= 6? msg = "You can not select more than 6 courses!!!" :
         courseTitle.includes(course.title)? msg2 = "Same course can not added twice!!!" : 
             (numberOfCourses += 1,
-            total = total + Number(course.price),
+            total = total + Number(course.price), //The price returns as string. That is why price is converted by number
             courseTitle = courseTitle + numberOfCourses + (". ") + course.title + (" "))
         )
 

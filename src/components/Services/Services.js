@@ -12,6 +12,7 @@ const Services = (props) => {
         const [courses, setCourses] = useState([]);
         const [select, setSelect] = useState([]);
 
+        //fetching local storage data before calling fake dataset
         useEffect(() => {
             const savedCourse = getDatabaseCart();
             const courseKeys = Object.keys(savedCourse);
@@ -27,6 +28,7 @@ const Services = (props) => {
             setCourses(data);
         }, [courses]);
 
+        //Handling course orders and sending localstorage using keys
         const addCourseHandler = (course) => {
             const newSelect = [...select, course];
             setSelect(newSelect);
